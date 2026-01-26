@@ -1,0 +1,16 @@
+[package]
+name = "n8n_mcp"
+version = "0.1.0"
+edition = "2021"
+description = "n8n MCP Server for Zed"
+license = "MIT"
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+zed_extension_api = "0.7.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+schemars = "0.8"
