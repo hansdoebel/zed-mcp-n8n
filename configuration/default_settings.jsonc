@@ -1,4 +1,8 @@
 {
-  "server_url": "",
+  "server_url": "https://your-n8n-host/mcp-server/http",
+  //  - "oauth": mcp-remote opens your browser to log in to n8n on first run
+  //   caches/refreshes tokens in ~/.mcp-auth/. Leave access_token empty.
+  "auth": "oauth", // "oauth" || "token".
+  // Required only when auth is "token".
   "access_token": "",
 }
